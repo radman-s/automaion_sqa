@@ -26,4 +26,4 @@ browser.quit()
 print('test passed')
 
 # code in progress
-# need to sort assedtion (string from file not returning)
+# need to sort assertion (string from file not returning)
