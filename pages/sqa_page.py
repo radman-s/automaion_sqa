@@ -295,6 +295,10 @@ class SqaPage(BasePage):
         locator = Locator(By.XPATH, '(//a[text()="Table Sort & Search"])[3]')
         return BaseElement(driver=self.driver, locator=locator)
 
+    @property
+    def sort_salary(self):
+        locator = Locator(By.XPATH, '//th[text()="Salary"]')
+        return BaseElement(driver=self.driver, locator=locator)
 
 
 

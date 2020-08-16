@@ -7,6 +7,7 @@ import time
 browser = Drivers('--start-maximized').chrome()
 sp = SqaPage(driver=browser)
 
+
 sp.go()
 
 sp.close_add.click()
@@ -18,7 +19,6 @@ time.sleep(2)
 html = browser.page_source
 listing = Root(html, locator='.//table/tbody/tr')
 
-
 one = listing.get_listings(Listings)[1]
 two = listing.get_listings(Listings)[2]
 three = listing.get_listings(Listings)[3]
@@ -29,3 +29,9 @@ line_three = three.all
 print(line_one)
 print(line_two)
 print(line_three)
+
+sp.sort_salary.click()
+sp.sort_salary.click()
+
+# code in progress
+
